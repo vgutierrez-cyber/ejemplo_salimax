@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Certificados de Ejemplo</title>
-  < style>
+
+  <style>
     body {
       font-family: Arial, sans-serif;
       background: #f4f6f8;
@@ -19,27 +20,47 @@
     h1, h2 {
       text-align: center;
     }
+
+    /* Para PDF */
+    @media print {
+      body { background: white; padding: 0; }
+      .cert {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        page-break-inside: avoid;
+      }
+    }
   </style>
 </head>
+
 <body>
 
 <h1>Certificados de Ejemplo</h1>
 
 <div class="cert">
   <h2>Certificado de Análisis y Eficacia Viricida</h2>
-  <p>Se certifica que el producto evaluado ha demostrado una eficacia viricida superior al 99.9% conforme a los análisis realizados.</p>
+  <p>
+    Se certifica que el producto evaluado ha demostrado una eficacia viricida
+    superior al 99.9% conforme a los análisis realizados.
+  </p>
   <p><strong>Resultado:</strong> CUMPLE</p>
 </div>
 
 <div class="cert">
   <h2>Certificado de Control de Alcohol y Drogas</h2>
-  <p>La persona evaluada no presentó consumo de alcohol ni sustancias psicoactivas al momento de la prueba.</p>
+  <p>
+    La persona evaluada no presentó consumo de alcohol ni sustancias
+    psicoactivas al momento de la prueba.
+  </p>
   <p><strong>Resultado:</strong> NEGATIVO</p>
 </div>
 
 <div class="cert">
   <h2>Certificado de Análisis de Productos Químicos</h2>
-  <p>El producto químico analizado cumple con las especificaciones técnicas y condiciones de uso seguro.</p>
+  <p>
+    El producto químico analizado cumple con las especificaciones técnicas
+    y condiciones de uso seguro.
+  </p>
   <p><strong>Resultado:</strong> CUMPLE</p>
 </div>
 
